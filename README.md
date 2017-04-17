@@ -5,7 +5,14 @@ The main purpose of this software is post processing of data that was collected 
 
 ## Extra libraries
 
-
+Boost 1.58 or upper
+* program_options
+* thread
+* filesystem
+* chrono
+* system
+* date_time
+* atomic
 
 ## Building
 
