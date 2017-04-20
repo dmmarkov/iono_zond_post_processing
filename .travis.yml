@@ -1,0 +1,23 @@
+dist:
+ - trusty
+
+addons:
+  apt:
+    sources:
+    - sourceline: 'deb http://de.archive.ubuntu.com/ubuntu yakkety main universe'
+    packages:
+    - cmake
+    - g++
+    - libboost-all-dev
+
+install:
+- true
+
+script: 
+- ./build.sh
+
+language:
+- cpp
+
+compiler:
+- gcc
