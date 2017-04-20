@@ -192,7 +192,6 @@ SigmaPhiCalculation::mergeData() {
     }
 }
 
-#define DEBUG
 void
 SigmaPhiCalculation::calculateData() {
     boost::unique_lock<boost::mutex> lockMethod(calcLock_, boost::try_to_lock);

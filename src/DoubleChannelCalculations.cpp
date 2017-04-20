@@ -240,7 +240,6 @@ DoubleChannelCalculations::mergeData() {
     }
 }
 
-#define DEBUG
 void
 DoubleChannelCalculations::calculateData() {
     boost::unique_lock<boost::mutex> lockMethod(calcLock_, boost::try_to_lock);

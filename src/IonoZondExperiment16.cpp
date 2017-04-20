@@ -141,7 +141,6 @@ Experiment16Worker::mergeData() {
     //dummy
 }
 
-#define DEBUG
 void
 Experiment16Worker::calculateData() {
     boost::unique_lock<boost::mutex> lockMethod(calcLock_, boost::try_to_lock);

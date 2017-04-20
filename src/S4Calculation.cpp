@@ -192,7 +192,6 @@ S4Calculation::mergeData() {
     }
 }
 
-#define DEBUG
 void
 S4Calculation::calculateData() {
     boost::unique_lock<boost::mutex> lockMethod(calcLock_, boost::try_to_lock);
