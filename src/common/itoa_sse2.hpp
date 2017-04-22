@@ -1,5 +1,12 @@
+/*
+ * Original source of this file stored in
+ * https://github.com/miloyip/itoa-benchmark/blob/master/src/sse2.cpp
+ * LICENCE https://github.com/miloyip/itoa-benchmark/blob/master/license.txt
+ */
+
 // SSE2 implementation according to http://0x80.pl/articles/sse-itoa.html
 // Modifications: (1) fix incorrect digits (2) accept all ranges (3) write to user provided buffer.
+
 #ifndef ITOA_SSE2_HPP
 #define ITOA_SSE2_HPP
 

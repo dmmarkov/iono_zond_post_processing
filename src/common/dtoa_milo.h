@@ -1,3 +1,9 @@
+/*
+ * Original source of this file stored in
+ * https://github.com/miloyip/dtoa-benchmark/blob/master/src/milo/dtoa_milo.h
+ * LICENCE https://github.com/miloyip/dtoa-benchmark/blob/master/license.txt
+ */
+
 #pragma once
 
 #include <assert.h>
