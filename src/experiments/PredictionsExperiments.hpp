@@ -298,7 +298,7 @@ struct Experiment18SatelliteData {
     Experiment18SatelliteData() {
         MIN_S4_VALUE = 0.0;
         MAX_S4_VALUE = 1.0;
-        INTERVAL_COUNT = 24;
+        INTERVAL_COUNT = 64;
         COUNTERS_STEP = (MAX_S4_VALUE - MIN_S4_VALUE) / (double) INTERVAL_COUNT;
 
         counters.resize(INTERVAL_COUNT);
