@@ -118,6 +118,16 @@ PredictionsExperiments::PredictionsExperiments(ISatellite* satellite,
         experiment17L2_ = new IonoZondExperiment17(satelliteSystemId_, satellite_->getSatelliteId(), frequencyL2);
     }
 
+    if (experimentId_ == 19) {
+        experiment19L1_ = new IonoZondExperiment19(satellite, "L1");
+        experiment19L2_ = new IonoZondExperiment19(satellite, "L2");
+    }
+
+    if (experimentId_ == 20) {
+        experiment20_ = new IonoZondExperiment20(satellite);
+    }
+
+
     ThreadManager::getInstance().addNewCalculation(this);
 }
 
@@ -177,6 +187,16 @@ PredictionsExperiments::~PredictionsExperiments() {
 
             printCout(str.rdbuf());
         }
+    }
+
+    if (experimentId_ == 19) {
+        delete experiment19L1_;
+        delete experiment19L2_;
+    }
+
+
+    if (experimentId_ == 20) {
+        delete experiment20_;
     }
 }
 
@@ -1001,6 +1021,15 @@ PredictionsExperiments::mergeData() {
                             experiment18GLOL2WriteData(data);
                         }
                     }
+                }
+
+                if (experimentId_ == 19) {
+                    experiment19L1_->pushSigmaPhi((*it5).sigmaPhi);
+                    experiment19L2_->pushSigmaPhi((*it6).sigmaPhi);
+                }
+
+                if (experimentId_ == 20) {
+                    experiment20_->pushTec((*it4).tec);
                 }
 
                 delete newTime;

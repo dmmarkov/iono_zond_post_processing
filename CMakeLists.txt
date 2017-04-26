@@ -48,7 +48,10 @@ add_executable(ionozondpostprocessing src/common/common_functions.cpp
 					src/experiments/SvmPredictionData.cpp
 					src/logger/Logger.cpp
 					src/thread_manager/ThreadManager.cpp
-					src/parser/LogParserThread.cpp)
+					src/parser/LogParserThread.cpp
+                                        src/experiments/IonoZondExperiment19.cpp
+                                        src/experiments/IonoZondExperiment20.cpp
+)
 
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall -m64 -DDEBUG -march=haswell")
 set(CMAKE_CXX_FLAGS_RELEASE "-Wall -m64 -march=native -Ofast")

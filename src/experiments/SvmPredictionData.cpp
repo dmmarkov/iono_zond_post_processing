@@ -46,6 +46,7 @@ SvmPredictionData::SvmPredictionData() : isActive_(false) {
     isExperiment16 = false;
     isExperiment17 = false;
     isExperiment18 = false;
+    isExperiment19 = false;
 
     numberOfExperiment_ = -1;
 
@@ -160,6 +161,16 @@ SvmPredictionData::start(std::string& nameOfExperiment, std::string& nameOfSatel
     if (nameOfExperiment == "experiment18") {
         isExperiment18 = true;
         numberOfExperiment_ = 18;
+    }
+
+    if (nameOfExperiment == "experiment19") {
+        isExperiment19 = true;
+        numberOfExperiment_ = 19;
+    }
+
+    if (nameOfExperiment == "experiment20") {
+        isExperiment20 = true;
+        numberOfExperiment_ = 20;
     }
 
     if (nameOfSatelliteSystem != "") {

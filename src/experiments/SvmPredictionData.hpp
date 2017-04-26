@@ -107,6 +107,8 @@ private:
     bool isExperiment16; //predicting S4 from previous 2999 values.
     bool isExperiment17; //like 16' but with lower precision. Only 4 values after 0
     bool isExperiment18; //it's frequency of occurence of S4 in intervals
+    bool isExperiment19; //it's like 18, but for sigmaPhi
+    bool isExperiment20; //it's like 18 and 19, but for tec and with another intervals and with some magic
 
     int filterSatelliteSystem;
     int filterSatelliteId;

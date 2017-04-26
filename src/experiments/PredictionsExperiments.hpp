@@ -21,6 +21,8 @@
 #include "ISatellite.hpp"
 #include "IonoZondExperiment16.hpp"
 #include "IonoZondExperiment17.hpp"
+#include "IonoZondExperiment19.hpp"
+#include "IonoZondExperiment20.hpp"
 
 struct Experiment1LearnindData {
     double s4;
@@ -201,6 +203,14 @@ struct Experiment16LearnindData {
 
 struct Experiment18LearnindData {
     double s4;
+
+    int satelliteSystemId;
+    int satelliteId;
+    double frequency;
+};
+
+struct Experiment20LearnindData {
+    double tec;
 
     int satelliteSystemId;
     int satelliteId;
@@ -440,6 +450,9 @@ private:
     Experiment18SatelliteData       experiment18GPSL1_;
     Experiment18SatelliteData       experiment18GLOL1_;
     Experiment18SatelliteData       experiment18GLOL2_;
+    IonoZondExperiment19           *experiment19L1_;
+    IonoZondExperiment19           *experiment19L2_;
+    IonoZondExperiment20           *experiment20_;
 
     void experiment1WriteData(Experiment1LearnindData& data);
     void experiment2WriteData(Experiment2SatelliteChannelData *channel, Experiment2LearnindData& data);
