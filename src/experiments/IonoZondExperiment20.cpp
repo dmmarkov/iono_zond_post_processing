@@ -78,27 +78,28 @@ IonoZondExperiment20::~IonoZondExperiment20() {
 
 void
 IonoZondExperiment20::pushTec(const double tec) {
-    size_t i = (int)((tec - minTecValue_) / stepOfCounter_);
-    доделать вывод значений в файл и посмотреть что с ними не так
-//    std::stringstream str;
-//    str << doubleToString(tec, 10) << " " << i;
-//    printCout(str.rdbuf());
+#warning Implement me please
+//    size_t i = (int)((tec - minTecValue_) / stepOfCounter_);
+//    доделать вывод значений в файл и посмотреть что с ними не так
+////    std::stringstream str;
+////    str << doubleToString(tec, 10) << " " << i;
+////    printCout(str.rdbuf());
+////
+////    if (((int)i - 1) < 0) {
+////        std::stringstream str;
+////        str << doubleToString(tec, 10) << " " << doubleToString(stepOfCounter_, 10) << " " << i;
+//////        perror(str.str().c_str());
+////        printCout(str.rdbuf());
+////        exit(EXIT_FAILURE);
+////    }
 //
-//    if (((int)i - 1) < 0) {
+//    if (i >= counters_.size()) {
 //        std::stringstream str;
 //        str << doubleToString(tec, 10) << " " << doubleToString(stepOfCounter_, 10) << " " << i;
 ////        perror(str.str().c_str());
 //        printCout(str.rdbuf());
 //        exit(EXIT_FAILURE);
 //    }
-
-    if (i >= counters_.size()) {
-        std::stringstream str;
-        str << doubleToString(tec, 10) << " " << doubleToString(stepOfCounter_, 10) << " " << i;
-//        perror(str.str().c_str());
-        printCout(str.rdbuf());
-        exit(EXIT_FAILURE);
-    }
-
-    counters_.at(i)++;
+//
+//    counters_.at(i)++;
 }
