@@ -1,2 +1,6 @@
 build
 nbproject
+.cproject
+.externalToolBuilders
+.project
+.settings
