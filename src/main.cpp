@@ -128,6 +128,7 @@ main(int argc, char *argv[]) {
     std::string nameOfSatelliteChannel = "";
 
     size_t timeToSleep = 10;
+    size_t experiment21shift = 3000;
 
     boost::program_options::options_description desc("Usage options");
     desc.add_options()
@@ -144,6 +145,7 @@ main(int argc, char *argv[]) {
             ("satellite-id", boost::program_options::value(&idOfOutputSatellite), "ID of satellite that will be output GPS(1-32), GLONASS(1-24)")
             ("satellite-channel", boost::program_options::value(&nameOfSatelliteChannel), "channel L1, L2")
             ("sleep", boost::program_options::value(&timeToSleep), "Delay between reads from stdin in milliseconds")
+			("experiment21shift", boost::program_options::value(&experiment21shift), "The shift state used in 21 experiment")
             ;
 
     boost::program_options::variables_map vm;

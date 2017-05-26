@@ -109,6 +109,7 @@ private:
     bool isExperiment18; //it's frequency of occurence of S4 in intervals
     bool isExperiment19; //it's like 18, but for sigmaPhi
     bool isExperiment20; //it's like 18 and 19, but for tec and with another intervals and with some magic
+    bool isExperiment21; //this is experiment for prediction with shifting data, take extra argument for shifting, will be like 16 experiment
 
     int filterSatelliteSystem;
     int filterSatelliteId;

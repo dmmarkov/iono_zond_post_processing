@@ -47,6 +47,8 @@ SvmPredictionData::SvmPredictionData() : isActive_(false) {
     isExperiment17 = false;
     isExperiment18 = false;
     isExperiment19 = false;
+    isExperiment20 = false;
+    isExperiment21 = false;
 
     numberOfExperiment_ = -1;
 
@@ -172,6 +174,12 @@ SvmPredictionData::start(std::string& nameOfExperiment, std::string& nameOfSatel
         isExperiment20 = true;
         numberOfExperiment_ = 20;
     }
+
+    if (nameOfExperiment == "experiment21") {
+		isExperiment21 = true;
+		numberOfExperiment_ = 21;
+    }
+
 
     if (nameOfSatelliteSystem != "") {
         if (nameOfSatelliteSystem == "GPS") {
